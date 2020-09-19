@@ -1,64 +1,65 @@
 <app-navbar></app-navbar>
 <div class="container-fluid">
-    <div class="row justify-content-center">
-
-    </div>
-    <div class="row ">
-        <div class="col transition-white">
-
-        </div>
-    </div>
-    <a name="about" >
+    <a name="work">
         <div class="row">
-            <div class="col-4">
-                <div class="card">
-                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                      <h4><b>John Doe</b></h4> 
-                      <p>Architect & Engineer</p> 
-                    </div>
-                  </div>
+            <div class="col" style="margin-top: 12%;">
+                <!-- empty margin between navbar and work section -->
+                <h1 style='color: white; font-family: URW Chancery L, cursive; font-size: 60px;'>Work</h1>
+                <div class="underline-gold-center"></div>
             </div>
-
-            <div class="col-4">
-                <div class="card">
-                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                      <h4><b>John Doe</b></h4> 
-                      <p>Architect & Engineer</p> 
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-4">
-                <div class="card">
-                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                      <h4><b>John Doe</b></h4> 
-                      <p>Architect & Engineer</p> 
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-4">
-                <div class="card">
-                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                      <h4><b>John Doe</b></h4> 
-                      <p>Architect & Engineer</p> 
-                    </div>
-                  </div>
-            </div>
-
         </div>
-    
+        <div class="row justify-content-center">
+            <!-- {{gettProjecs()}} -->
+            <!-- auto generate data for projects -->
+            <div *ngFor="let item of projectos" class="col-4">
+                <div class="card">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h3 style="text-align: center;"><b>{{item.name}}</b></h3>
+                        <h5><p>{{item.position}}</p></h5>
+                        <p>{{item.description}}</p>
+
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
     </a>
-    
+
+    <a name="about">
+        <div class="row ">
+            <div class="col transition-white">
+
+            </div>
+        </div>
+        <div class="row justify-content-center" >
+            <div class="col" style="background-color: white;"></div>
+            <div class="col-6" style="background-color: white; text-align: center;">
+                <!-- empty margin between navbar and work section -->
+                <h1 style=' font-family: URW Chancery L, cursive; font-size: 100px;'>About</h1>
+                <div class="underline-gold-center" style="margin:auto; width:100px"></div>
+            </div>
+            <div class="col" style="background-color: white;">
+                <li>
+                    
+                </li>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col about">
+
+            </div>
+        </div>
+
+    </a>
+
     <a name="contact">
         <div class="row">
             <div class="col contact">
             </div>
         </div>
     </a>
-    
+
 </div>

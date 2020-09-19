@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+// import { Routes } from '@angular/router';
+import { Routes,Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { LinkTestComponent } from '../link-test/link-test.component';
+
+
 
 @Component({
   selector: 'app-navbar',
