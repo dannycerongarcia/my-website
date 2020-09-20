@@ -11,19 +11,20 @@
         <div class="row justify-content-center">
             <!-- {{gettProjecs()}} -->
             <!-- auto generate data for projects -->
-            <div *ngFor="let item of projectos" class="col-4">
+            <div *ngFor="let item of projectos" class="col-6 col-sm-4">
                 <div class="card">
-                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+                    <img src={{item.image}} alt="Avatar" style="width:100%; height:350px; size:initial; display: block;
+                    margin-left: auto;
+                    margin-right: auto;">
                     <div class="container">
                         <h3 style="text-align: center;"><b>{{item.name}}</b></h3>
-                        <h5><p>{{item.position}}</p></h5>
+                        <h5>
+                            <p>{{item.position}}</p>
+                        </h5>
                         <p>{{item.description}}</p>
-
                     </div>
                 </div>
             </div>
-
-            
         </div>
     </a>
 
@@ -33,33 +34,113 @@
 
             </div>
         </div>
-        <div class="row justify-content-center" >
-            <div class="col" style="background-color: white;"></div>
-            <div class="col-6" style="background-color: white; text-align: center;">
+        <div class="row justify-content-center">
+            <!-- <div class="col" style="background-color: white;"></div> -->
+            <div class="col" style="background-color: white; text-align: center;">
                 <!-- empty margin between navbar and work section -->
                 <h1 style=' font-family: URW Chancery L, cursive; font-size: 100px;'>About</h1>
                 <div class="underline-gold-center" style="margin:auto; width:100px"></div>
             </div>
-            <div class="col" style="background-color: white;">
-                <li>
-                    
-                </li>
-            </div>
+            <!-- <div class="col" style="background-color: white;"> -->
         </div>
+
 
         <div class="row">
-            <div class="col about">
+            <div class="col-12 col-sm-6 about">
+                <div style="margin-top: 2px;">
+                    <img src="../../assets/me.png" alt="Avatar" style="width:200px;height:200px; size:initial; display: block;
+                    margin-left: auto;
+                    margin-right: auto;                                                                                                                                                                                                                                  ;
+                    border-radius: 80%;">
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 about">
 
             </div>
         </div>
+        <!-- icon list of technologies i use -->
+        <div class="row">
+            <div class="col-12">
 
+            </div>
+        </div>
     </a>
 
     <a name="contact">
-        <div class="row">
-            <div class="col contact">
+        <div class="contact">
+            <div class="row">
+                <div class="col-6 contact" style="height: 20vh;">
+                    <div style="margin-top: 20px;">
+                        <h1 style='color: white; font-family: URW Chancery L, cursive; font-size: 60px;'>Contact me</h1>
+                        <div class="underline-gold-center" style="width: 100px; margin-left: 20px;"></div>
+                    </div>
+                </div>
+                <div class="col-6" style="height: 20vh; background-color: #CC99CC; color:  #300A24;">
+                    <h4 style="margin-top: 80px; font-style: oblique; 
+                    font-weight: 990;">Contact Info</h4>
+                </div>
+                <div class="col contact">
+                    <!-- contact form -->
+                    <div class="row">
+
+                        <div class="col">
+                            <input type="text" name="name" placeholder="Name" style="width: auto; margin-bottom: 5px;">
+                        </div>
+                        <div class="col">
+                            <input type="email" name="email" placeholder="Email"
+                                style="width: auto; margin-bottom: 5px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <br>
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <br>
+                            <br>
+                            <input type="text" name="message" placeholder="message"
+                                style="height: 200px;width: 100%; padding: 0px 0px  160px 10px; margin-bottom: 10px;">
+                                <br>
+                            <button style="border-radius: 6px; background-color:  gold;">SEND</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" style="background-color: #CC99CC; height: 80vh; width: 100%; color: #300A24;">
+                    <div class="row">
+
+                        <div class="col" >
+                            <h6>🖥 CONNECT ONLINE</h6>
+                            <a
+                                href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQGjAEMTR7GSSQAAAXSrB-8QCgZ4H5COxuAL5BH1NVCaKAeldOXV0-qg5ctYXZUHUY1-_QjHSu6pmLIo-ClaMA_wwfT9yGpYq-Z9QJwaJ922n6a8GllJVKpzG2GrFS3rtHhonVs=&originalReferer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdanny-ceron-garcia-1a3553103">
+                                <img src="../../assets/in-icon.png" style="height: 35px; width: 35px; margin: 5px;">
+                            </a>
+                            <a >
+                                <img src="../../assets/tube-icon.png" style="height: 35px; width: 45px; margin: 5px;">
+                            </a>
+                            <img src="../../assets/f-icon.png" style="height: 35px; width: 35px; margin: 5px;">
+                            <img src="../../assets/insta-icon.png" style="height: 35px; width: 35px; margin: 5px;">
+                            <br><br>📨
+                            <a href = "mailto:dannycerongarcia.com">
+                                 dannycerongarcia@gmail.com
+                            </a>
+                            <br>
+                            <br>
+                            <h6>📍Bay Area CA, US</h6>
+                            <div style="border-radius: 50%; width: 300px; height: 300px; overflow: hidden;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1612502.511845104!2d-123.54149079038609!3d37.87388356475237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808583a3a688d7b5%3A0x8c891b8457461fa9!2sSan%20Francisco%20Bay%20Area%2C%20CA!5e0!3m2!1sen!2sus!4v1600599348586!5m2!1sen!2sus" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+
     </a>
 
 </div>

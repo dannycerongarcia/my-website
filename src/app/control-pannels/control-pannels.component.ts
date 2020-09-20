@@ -22,7 +22,7 @@ export class ControlPannelsComponent implements OnInit {
     this.projectos.forEach(element => {
       let newElement = `<div class="col-4">
       <div class="card">
-          <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+          <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100% display: block; margin-left: auto; margin-right: auto;">
           <div class="container">
               <h4><b>John Doe</b></h4>
               <p>~{{element.position}}</p>
