@@ -12,28 +12,18 @@ export class ControlPannelsComponent implements OnInit {
   projectos:{position:String,name:String,description:String,image:String,link:String}[] = projectsJson.projects
   
 
-  constructor() { }
+  constructor() {
+    
+   }
 
   ngOnInit(): void {
   }
-
-  gettProjecs(){
-    let list:String[]=[]
-    this.projectos.forEach(element => {
-      let newElement = `<div class="col-4">
-      <div class="card">
-          <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100% display: block; margin-left: auto; margin-right: auto;">
-          <div class="container">
-              <h4><b>John Doe</b></h4>
-              <p>~{{element.position}}</p>
-          </div>
-      </div>
-  </div>`
-      list.push(newElement)
-    });
-    console.log("before printing a list")
-    console.log(list)
-    return list
+  displayPDF(): void{
+    document.getElementById("myModal").style.display = "block";
   }
+  closePDF(): void{
+    document.getElementById("myModal").style.display = "none";
+  }
+  
 
 }

@@ -1,12 +1,12 @@
 {"projects":[
     {"position":"Android Developer","name":"SHAREOUT","description":"","image":"../../assets/Shareout.png","link":"https://github.com/dannycerongarcia/shareout"},
-    {"position":"Full Stack Web-dev","name":"ALGORITHMS QUIZ","description":"","image":"https://materializecss.com/images/sample-1.jpg","link":"https://github.com/dannycerongarcia/algorithms-quiz"},
-    {"position":"Front-end Developer","name":"Portfolio","description":"","image":"https://materializecss.com/images/sample-1.jpg","link":"https://github.com/dannycerongarcia/my-website"},
-    {"position":"Front-end Developer","name":"ThinkLfy","description":"","image":"https://materializecss.com/images/sample-1.jpg","link":"https://github.com/dannycerongarcia/ThinkLfy"},
-    {"position":"Sofware Developer","name":"TaxFri","description":"","image":"https://materializecss.com/images/sample-1.jpg","link":"https://github.com/dannycerongarcia/TaxFri"},
-    {"position":"Sofware Developer","name":"equation_of_plane","description":"","image":"https://materializecss.com/images/sample-1.jpg","link":"https://github.com/dannycerongarcia/Plane-equations/blob/master/equation_of_plane.py"},
-    {"position":"Computer engineers","name":"Self Driving Car","description":"","image":"https://materializecss.com/images/sample-1.jpg","link":"https://github.com/dannycerongarcia/Self-Driving-Car"},
-    {"position":"Computer engineers","name":"Smart Car","description":"","image":"https://materializecss.com/images/sample-1.jpg","link":"https://github.com/dannycerongarcia/smart_carr"},
-    {"position":"Computer engineers","name":"LCD-Thermometer","description":"","image":"https://materializecss.com/images/sample-1.jpg","link":"https://github.com/dannycerongarcia/Arduino_UNO_LCD_Thermometer"}
+    {"position":"Full Stack Web-dev","name":"ALGORITHMS QUIZ","description":"","image":"../../assets/algorithms-quiz.png","link":"https://github.com/dannycerongarcia/algorithms-quiz"},
+    {"position":"Front-end Developer","name":"Portfolio","description":"","image":"../../assets/Portfolio.png","link":"https://github.com/dannycerongarcia/my-website"},
+    {"position":"Front-end Developer","name":"ThinkLfy","description":"","image":"../../assets/thinkLfy.png","link":"https://github.com/dannycerongarcia/ThinkLfy"},
+    {"position":"Sofware Developer","name":"TaxFri","description":"","image":"../../assets/TaxFri.png","link":"https://github.com/dannycerongarcia/TaxFri"},
+    {"position":"Sofware Developer","name":"equation_of_plane","description":"","image":"../../assets/planeEQ.png","link":"https://github.com/dannycerongarcia/Plane-equations/blob/master/equation_of_plane.py"},
+    {"position":"Computer engineers","name":"Self Driving Car","description":"","image":"../../assets/self-d-car-c.jpg","link":"https://github.com/dannycerongarcia/Self-Driving-Car"},
+    {"position":"Computer engineers","name":"Smart Car","description":"","image":"../../assets/self-d-car-cpp.jpg","link":"https://github.com/dannycerongarcia/smart_carr"},
+    {"position":"Computer engineers","name":"LCD-Thermometer","description":"","image":"../../assets/thermometer-setup.JPG","link":"https://github.com/dannycerongarcia/Arduino_UNO_LCD_Thermometer"}
     ]
 }
