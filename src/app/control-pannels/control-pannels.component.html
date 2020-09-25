@@ -12,14 +12,19 @@
             <!-- auto generate data for projects -->
             <div *ngFor="let item of projectos" class="col-6 col-sm-4 col-md-4 col-lg-3">
                 <div class="card">
-                    <img src={{item.image}} alt="Avatar" style="width:100%; height:350px; size:initial; display: block;
+                    <img src={{item.image}} alt="Avatar" style="width:100%; height:290px; size:initial; display: block;
                     margin-left: auto;
                     margin-right: auto;">
                     <div class="container">
-                        <h4 style="text-align: center;"><b>{{item.name}}</b></h4>
-                        <h5>
-                            <p>{{item.position}}</p>
-                        </h5>
+                        <h5 style="text-align: center;"><b>{{item.name}}</b></h5>
+                        <h6>
+                            <p> 
+                                - {{item.position}} 
+                                <a href={{item.link}}>
+                                    <img src="../../assets/GitHub-Mark-32px.png" style="height: 20px; width: 20px; margin-left: 10px;"/>
+                                </a>
+                            </p>
+                        </h6>
                         <p>{{item.description}}</p>
                     </div>
                 </div>
@@ -72,11 +77,10 @@
                             border-radius: 85%;">
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-12 col-sm-2 col-md-6"></div>
-                            <div class="col-12 col-sm-6" style="padding-left: 10%;">
+                            <div class="col-12 col-sm-4 col-md-6"></div>
+                            <div class="col-12 col-sm-6 resume-btn" style="padding-left: 10%; ">
+                                    <button id="myBtn" (click)="displayPDF()" class="resume-button">Resume</button>
 
-                                <button id="myBtn" (click)="displayPDF()" class="resume-button">Resume</button>     
-                                
                             </div>
                         </div>
 
@@ -116,35 +120,41 @@
     <a name="contact">
         <div class="contact">
             <div class="row">
-                <div class="col-12 col-sm-5" style="height: 100vh; background-color: black;">
+                <div class="col-12 col-sm-5" style="height: 100vh; background-color: black; margin-bottom: 9px;">
                     <div style="margin-top: 20px;">
                         <h1 style='color: white; font-family: URW Chancery L, cursive; font-size: 60px;'>Contact me</h1>
                         <div class="underline-gold-center" style="width: 100px; margin-left: 20px;"></div>
                     </div>
                     <!-- contact form -->
                     <div class="row" style="margin-top: 100px;">
-                        <div class="col-12  col-lg-4">
-                            <input type="text" name="name" placeholder="Name" style="width: auto; margin-bottom: 5px;">
+                        <div class="col-12  col-lg-5">
+                            <input  #name placeholder="Name" style="border-radius: 5px; padding: 0px,0px,0px,0px; width: auto; margin-bottom: 5px;"
+                            (keyup)="getName(name.value)">
                         </div>
                         <div class="col-12 col-lg-4">
-                            <input type="email" name="email" placeholder="Email"
-                                style="width: auto; margin-bottom: 5px;">
+                            <input type="email" #email placeholder="Email"
+                                style="width: auto; margin-bottom: 5px; border-radius: 5px;"
+                                (keyup)="getEmail(email.value)" >
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <br>
-                            <input type="text" name="subject" placeholder="Subject">
+                            <input #subject placeholder="Subject" style="border-radius: 5px;"
+                            (keyup)="getSubject(subject.value)">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <br>
                             <br>
-                            <input type="text" name="message" placeholder="message"
-                                style="height: 200px;width: 60%; padding: 0px 0px  160px 10px; margin-bottom: 10px;">
+                            <textarea  #message placeholder="message"
+                                style="height: 200px;width: 85%;  margin-bottom: 10px; border-radius: 5px;"
+                                (keyup)="getMessage(message.value)">
+                            </textarea>
                             <br>
-                            <button style="border-radius: 6px; background-color:  gold;">SEND</button>
+                            
+                            <button (click)="sendForm()" style="border-radius: 6px; background-color: gold;">SEND</button>
                         </div>
                     </div>
                 </div>
@@ -164,7 +174,7 @@
                             </a>
                             <img src="../../assets/f-icon.png" style="height: 35px; width: 35px; margin: 5px;">
                             <img src="../../assets/insta-icon.png" style="height: 35px; width: 35px; margin: 5px;">
-                            <br><br>📨
+                            <br><br>✉
                             <a href="mailto:dannycerongarcia.com">
                                 dannycerongarcia@gmail.com
                             </a>

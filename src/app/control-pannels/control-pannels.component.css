@@ -35,7 +35,8 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(220,220,220,0.2);
     transition: 0.3s;
-    width: 100%;
+    width: 95%;
+    height: 400px;
     background-color:  lightslategray;
     margin-top: 6px;
     margin-bottom: 2%;
@@ -47,14 +48,22 @@
   margin-top: -10px;
   background-color:#9e9e9e;
   color: #F0F8FF;
+  
 }
   
 .container {
     padding: 3px 10px;
-}
+    height: 300px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    scrollbar-width: none;
+}::-webkit-scrollbar {
+  display: none;
+};
+  
   
 .underline-gold-center{
-  background-color: gold;
+  background-color:gold;
   height: 5px;
   width: 35px;
   /* margin: auto; */
@@ -126,3 +135,11 @@
   cursor: pointer;
 }
 
+/* col-12, .resume-btn{
+  margin-left: auto;
+  margin-right: auto;
+}
+col-sm-6, .resume-btn{
+  padding-left: 10%;
+  margin-right: 0;
+} */
