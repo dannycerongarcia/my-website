@@ -29,7 +29,7 @@
         "web-link":"",
         "world":""},
     {"position":"Sofware Developer","name":"TaxFri",
-        "description":"Taxfri is a financial tool developed in python. It helps users to keep track of their comapny or work expenses for tax deduxtion. All data is stored in local CSV files which facilitates the use of the data for other purposes.",
+        "description":"Taxfri is a financial tool developed in python. It helps users to keep track of their comapny or work expenses for tax deduction. All data is stored in local CSV files which facilitates the use of the data for other purposes.",
         "image":"../../assets/TaxFri.png","link":"https://github.com/dannycerongarcia/TaxFri",
         "web-link":"",
         "world":""},
