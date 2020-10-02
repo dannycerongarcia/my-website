@@ -18,11 +18,17 @@
                     <div class="container">
                         <h5 style="text-align: center;"><b>{{item.name}}</b></h5>
                         <h6>
-                            <p> 
-                                - {{item.position}} 
+                            <p>
+                                - {{item.position}}
                                 <a href={{item.link}}>
-                                    <img src="../../assets/GitHub-Mark-32px.png" style="height: 20px; width: 20px; margin-left: 10px;"/>
+                                    <img src="../../assets/GitHub-Mark-32px.png"
+                                        style="height: 20px; width: 20px; margin-left: 10px;" />
                                 </a>
+                            
+                               <a id="website"href={{item.webLink}} >
+                                    {{item.world}}
+                                </a>
+                            
                             </p>
                         </h6>
                         <p>{{item.description}}</p>
@@ -51,7 +57,8 @@
                         <span class="close" (click)="closePDF()">&times;</span>
                         <h4>Danny's resume</h4>
                         <iframe src="../../assets/danny-ceron-garcia.pdf" style="width: 100%; height: 100%;"></iframe>
-                        <span class="close" style="color: black; margin-left: 90%; margin-top: 10px;" (click)="closePDF()">close</span>
+                        <span class="close" style="color: black; margin-left: 90%; margin-top: 10px;"
+                            (click)="closePDF()">close</span>
                     </div>
                 </div>
             </div>
@@ -79,7 +86,7 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-sm-4 col-md-6"></div>
                             <div class="col-12 col-sm-6 resume-btn" style="padding-left: 10%; ">
-                                    <button id="myBtn" (click)="displayPDF()" class="resume-button">Resume</button>
+                                <button id="myBtn" (click)="displayPDF()" class="resume-button">Resume</button>
 
                             </div>
                         </div>
@@ -128,33 +135,35 @@
                     <!-- contact form -->
                     <div class="row" style="margin-top: 100px;">
                         <div class="col-12  col-lg-5">
-                            <input  #name placeholder="Name" style="border-radius: 5px; padding: 0px,0px,0px,0px; width: auto; margin-bottom: 5px;"
-                            (keyup)="getName(name.value)">
+                            <input #name placeholder="Name"
+                                style="border-radius: 5px; padding: 0px,0px,0px,0px; width: auto; margin-bottom: 5px;"
+                                (keyup)="getName(name.value)">
                         </div>
                         <div class="col-12 col-lg-4">
                             <input type="email" #email placeholder="Email"
                                 style="width: auto; margin-bottom: 5px; border-radius: 5px;"
-                                (keyup)="getEmail(email.value)" >
+                                (keyup)="getEmail(email.value)">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <br>
                             <input #subject placeholder="Subject" style="border-radius: 5px;"
-                            (keyup)="getSubject(subject.value)">
+                                (keyup)="getSubject(subject.value)">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <br>
                             <br>
-                            <textarea  #message placeholder="message"
+                            <textarea #message placeholder="message"
                                 style="height: 200px;width: 85%;  margin-bottom: 10px; border-radius: 5px;"
                                 (keyup)="getMessage(message.value)">
                             </textarea>
                             <br>
-                            
-                            <button (click)="sendForm()" style="border-radius: 6px; background-color: gold;">SEND</button>
+
+                            <button (click)="sendForm()"
+                                style="border-radius: 6px; background-color: gold;">SEND</button>
                         </div>
                     </div>
                 </div>
@@ -181,7 +190,7 @@
                             <br>
                             <br>
                             <h6>📍Bay Area CA, US</h6>
-                            <div >
+                            <div>
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1612502.511845104!2d-123.54149079038609!3d37.87388356475237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808583a3a688d7b5%3A0x8c891b8457461fa9!2sSan%20Francisco%20Bay%20Area%2C%20CA!5e0!3m2!1sen!2sus!4v1600599348586!5m2!1sen!2sus"
                                     width="350" height="350" frameborder="0" style="border:0;" allowfullscreen=""
