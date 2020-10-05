@@ -19,6 +19,7 @@
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba( 253, 254, 254 ,1.0) );
 
 }
+
 .about{
     /* height: 100%; */
     min-height: 100vh;
@@ -26,6 +27,7 @@
     background-color: white;
     /* margin-bottom: 19%; */
 }
+
 .contact{
     height: 80vh;
     width: 100%;
@@ -61,7 +63,6 @@
   display: none;
 };
   
-  
 .underline-gold-center{
   background-color:gold;
   height: 5px;
@@ -82,6 +83,7 @@
   border-right: transparent;
   
 }
+
 .resume-button:hover{
   margin-top: 16px;
   margin-left: auto; 
@@ -134,12 +136,3 @@
   text-decoration: none;
   cursor: pointer;
 }
-
-/* col-12, .resume-btn{
-  margin-left: auto;
-  margin-right: auto;
-}
-col-sm-6, .resume-btn{
-  padding-left: 10%;
-  margin-right: 0;
-} */
